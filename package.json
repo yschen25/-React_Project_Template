@@ -1,0 +1,56 @@
+{
+  "name": "React_Project_Template",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.3.0",
+    "@testing-library/user-event": "^13.5.0",
+    "bootstrap": "^5.2.0",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.4.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.4.0",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "dev": "concurrently --kill-others \"npm run start\" \"cd ../api && npm start\"",
+    "integration-test": "jest",
+    "lint": "eslint src/*.js src/**/*.js",
+    "lint-fix": "eslint --fix src/*.js src/**/*.js"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "proxy": "http://localhost:4000",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.30.7",
+    "@typescript-eslint/parser": "^5.30.7",
+    "chromedriver": "^103.0.0",
+    "concurrently": "^7.3.0",
+    "eslint": "^8.20.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-react": "^7.30.1",
+    "jest": "^28.1.3",
+    "sass": "^1.54.0",
+    "selenium-webdriver": "^4.1.2"
+  }
+}

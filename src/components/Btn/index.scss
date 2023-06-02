@@ -1,0 +1,9 @@
+.App .btn-group {
+    width: 100%;
+
+    @media (min-width: 992px) {
+        bottom: 0;
+        right: 0;
+        position: absolute;
+    }
+}
